@@ -106,7 +106,7 @@ for i in range(26):
 
 
 #Structure and looks of alphabet buttons:
-Radius=20
+Side=40
 def buttons():
     for elements in main_button_controller:
         x,y,alpha=elements                                          
@@ -175,7 +175,7 @@ while run:
             for elements in main_button_controller:
                 x_coordinate,y_coordinate,charcter=elements
                 dis=math.sqrt((x_coordinate-a)**2+(y_coordinate-b)**2)
-                if dis<Radius:     
+                if dis<30:     
                     Guessed_letters.append(elements[2])
                     for guesses in Guessed_letters:
                         if guesses in sorted_letter_of_randomword:
